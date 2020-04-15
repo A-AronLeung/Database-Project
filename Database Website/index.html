@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "Home Page" content ="home of Look Inna Book">
+        <title>
+            Look Inna Book
+        </title>
+        <!-- Add CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navWrap">
+                <div class="left-side">
+                    <div class="navLinkWrap">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="navLinkWrap">
+                        <a href="About.html">About</a>
+                    </div>
+                </div>
+
+                <div class="middle-side">
+                    <div class="brand">
+                        <div>
+                            LOOK INNA BOOK
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="navLinkWrap">
+                        <a href="logIn.html">Log Out</a>
+                    </div>
+
+                    <div class="navLinkWrap">
+                        <a href="checkOut.html">Checkout</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contentWrap">
+                <div class="itemCategoryWrapper">
+
+                    <!-- Book Title Images -->
+                    <div class="categoryWrapper">
+                        <div class = "categoryBackgroundImg" style = "background-image:url(Images/Title.jpg)"></div>
+                        
+                        <div class="categoryText">
+                            <div class="fadeInImageWrapper">
+                                <a href = "search.html"><img src = "Images/BookTitle.png" alt=""></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Search for a book title!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Author Images -->
+                    <div class="categoryWrapper">
+                        <div class = "categoryBackgroundImg" style = "background-image:url(Images/Author.jpg)"></div>
+                        
+                        <div class="categoryText">
+                            <div class="fadeInImageWrapper">
+                                <a href = "search.html"><img src = "Images/Author.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Search by Author!
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Genre Images -->
+                    <div class="categoryWrapper">
+                        <div class = "categoryBackgroundImg" style = "background-image:url(Images/Genre.gif)"></div>
+                        
+                        <div class="categoryText">
+                            <div class="fadeInImageWrapper">
+                                <a href = "search.html"><img src = "Images/Genre.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Search by Genre!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Images -->              
+                    <div class="categoryWrapper">
+                        <div class = "categoryBackgroundImg" style = "background-image:url(Images/Price.jpg)"></div>
+                        
+                        <div class="categoryText">
+                            <div class="fadeInImageWrapper">
+                                <a href = "search.html"><img src = "Images/Price.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Search by Price!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page Number Images -->               
+                    <div class="categoryWrapper">
+                        <div class = "categoryBackgroundImg" style = "background-image:url(Images/Pagenumber.jpg)"></div>
+                        
+                        <div class="categoryText">
+                            <div class="fadeInImageWrapper">
+                                <a href = "search.html"><img src = "Images/Pagenumber.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Search by number of pages!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISBN Images -->               
+                    <div class="categoryWrapper">
+                        <div class = "categoryBackgroundImg" style = "background-image:url(Images/ISBN.jpg)"></div>
+                        
+                        <div class="categoryText">
+                            <div class="fadeInImageWrapper">
+                                <a href = "search.html"><img src = "Images/ISBN.png"></a>
+                            </div>
+
+                            <div class="subtitle">
+                                Search by ISBN!
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>       
+    </body>
+
+    <script>
+        const categoryItems = document.querySelectorAll('.categoryWrapper')
+
+        categoryItems.forEach(categoryItem =>{
+            categoryItem.addEventListener('mouseover', () => {
+                categoryItem.childNodes[1].classList.add('img-brighten');
+            })
+
+            categoryItem.addEventListener('mouseout', () => {
+                categoryItem.childNodes[1].classList.remove('img-brighten');
+            })
+        })
+    </script>
+</html>

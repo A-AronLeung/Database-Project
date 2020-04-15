@@ -1,0 +1,22 @@
+TODO
+1. Build the project
+    -Create the folder
+    -add files
+    -connect files
+
+2. Navbar
+    -Search Bar
+    -Login
+    -Check Out
+
+3. Portfolio item grid
+    -images
+    -titles
+    -descriptions
+    -animations
+    -javascript
+
+4. About Page
+    -image
+    -split column layout
+    -content
